@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2</title>
+    <style>
+        img {
+            display: block;
+            margin: 10px 0;
+            border: 3px solid black;
+        }
+        .selected {
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+<h1>Лабораторна робота №2</h1>
+<h2>Хорошилов, Варіант 2</h2>
+<h3>Галарея малюнків</h3>
+<div id="gallery">
+    <img alt="Image 1" height="190" src="img1.png" width="330">
+    <img alt="Image 2" height="190" src="img2.png" width="330">
+    <img alt="Image 3" height="190" src="img3.png" width="330">
+</div>
+<div>
+    <button onclick="moveUp()">вишче</button>
+    <button onclick="moveDown()">нижче</button>
+</div>
+<p>Зміна параметрів вибранного малюнка:</p>
+<table>
+    <tr>
+        <td>
+            <label for="widthInput">ширина:</label>
+            <input id="widthInput" type="text" value="400">
+        </td>
+        <td>
+            <label for="heightInput">висота:</label>
+            <input id="heightInput" type="text" value="350">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="borderInput">товщина рамки:</label>
+            <input id="borderInput" type="text" value="5">
+        </td>
+        <td>
+            <label for="altInput">альтернативний текст:</label>
+            <input id="altInput" type="text" value="Щось новеньке">
+        </td>
+    </tr>
+</table>
+<br>
+<button onclick="updateImage()">оновити параметри</button>
+</body>
+<script src="main.js"></script>
+</html>
